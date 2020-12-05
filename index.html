@@ -3,10 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <title>Стартовый шаблон</title>
+  <title>Tesla</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
+<!-- SITE-HEADER -->
+<header class="site-header">
+  <div class="container site-header__container">
+    <a class="logo" href="index.html">
+      <img class="logo__img" src="img/logo.svg" alt="site logo" width="166" height="51">
+    </a>
+
+    <nav class="sitenav">
+      <ul class="sitenav__list">
+        <li class="sitenav__item sitenav__item--active">
+          <a class="sitenav__link" href="index.html">Model S</a>
+        </li>
+
+        <li class="sitenav__item">
+          <a class="sitenav__link" href="#">Model X</a>
+        </li>
+
+        <li class="sitenav__item">
+          <a class="sitenav__link" href="#">Model 3</a>
+        </li>
+
+        <li class="sitenav__item">
+          <a class="sitenav__link" href="#">Roadster</a>
+        </li>
+
+        <li class="sitenav__item">
+          <a class="sitenav__link" href="#">Energy</a>
+        </li>
+      </ul>
+
+      <a class="button" href="contact.html">Магазин</a>
+
+      <a class="button" href="contact.html">Войти</a>
+    </nav>
+
+    <button class="site-header__sitenav-toggler" type="button" aria-label="menu toggler"></button>
+  </div>
+</header>
+<!-- INTRO -->
+
+<!-- ADVANTAGES -->
+
+<!-- REVIEWS -->
+
+   <!-- JS -->
+   <script>
+    var elSiteHeader = document.querySelector('.site-header');
+    var elSitenavToggler = elSiteHeader.querySelector('.site-header__sitenav-toggler');
+
+    elSitenavToggler.addEventListener('click', function () {
+      elSiteHeader.classList.toggle('site-header--open');
+    });
+  </script><!-- JS -->
 </body>
 </html>

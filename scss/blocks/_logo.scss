@@ -1,0 +1,33 @@
+.logo {
+  display: block;
+}
+
+.logo__img {
+  display: block;
+  max-width: 166px;
+  margin-right: 200px;
+}
+
+@include breakpoint-down (1100) {
+  .logo__img {
+    margin-right: 150px;
+  }
+}
+
+@include breakpoint-down (1035) {
+  .logo__img {
+    margin-right: 100px;
+  }
+}
+
+@include breakpoint-down (975) {
+  .logo__img {
+    margin-right: 50px;
+  }
+}
+
+@include breakpoint-down (810) {
+  .logo__img {
+    margin-right: 20px;
+  }
+}

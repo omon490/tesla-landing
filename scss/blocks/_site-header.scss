@@ -1,0 +1,73 @@
+.site-header {
+  padding: 24px 0;
+}
+
+.site-header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-header--open .sitenav {
+  display: flex;
+}
+
+.site-header--open .site-header__sitenav-toggler {
+  background-image: url("../../img/close-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.site-header__sitenav-toggler {
+  display: none;
+}
+
+
+@include breakpoint-down (785) {
+  .site-header__sitenav-toggler {
+    position: relative;
+    z-index: 100;
+    width: 20px;
+    height: 17px;
+    border: none;
+    padding: 0;
+    display: block;
+    margin-left: auto;
+    background-color: transparent;
+    background-image: url("../../img/gamburger.svg");
+    background-repeat: no-repeat;
+
+    &::before{
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      transform: scale(2.5);
+    }
+  }
+
+  .site-header--open .sitenav__link {
+    color: $white;
+  }
+
+  .site-header--open .sitenav::before {
+    animation-name: slide-in;
+    animation-duration: 0.6s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  .site-header--open .button,
+  .site-header--open .sitenav__list {
+    animation-name: slide-in;
+    animation-duration: 0.6s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+}
+

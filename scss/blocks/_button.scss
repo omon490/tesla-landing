@@ -1,0 +1,48 @@
+.button {
+  text-decoration: none;
+  color: $black;
+  display: block;
+  font-weight: 500;
+}
+
+.button:not(:last-child) {
+  margin-right: 30px;
+  margin-left: auto;
+}
+
+@include breakpoint-down (910) {
+  .button:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+
+@include breakpoint-down (785) {
+  .button {
+    position: absolute;
+    z-index: 1;
+    right: 50px;
+    top: 200px;
+    margin: 0;
+    color: $white;
+  }
+
+  .button:nth-child(2) {
+    position: absolute;
+    z-index: 1;
+    right: 50px;
+    top: 250px;
+    margin: 0;
+  }
+}
+
+@include breakpoint-down (375) {
+  .button {
+    right: 50px;
+    top: 350px;
+  }
+
+  .button:nth-child(2) {
+    right: 50px;
+    top: 400px;
+  }
+}
