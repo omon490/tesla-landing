@@ -1,0 +1,169 @@
+
+.advantages {
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+
+.advantages__wrapper {
+  max-width: 880px;
+  display: flex;
+  transform: translateX(100px);
+  justify-content: space-between;
+}
+
+.advantages__superiority-list {
+  @include reset-list;
+  display: flex;
+  align-items: center;
+}
+
+.advantages__superiority-item:not(:last-child) {
+  margin-right: 80px;
+}
+
+.advantages__superiority-item {
+  display: flex;
+  align-items: center;
+  &::before {
+    content: "";
+    width: 46px;
+    height: 35px;
+    display: block;
+    margin-right: 15px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+  }
+}
+
+.advantages__superiority-item--speed {
+  &::before {
+    background-image: url("../../img/speedometr.svg");
+  }
+}
+
+.advantages__superiority-item--distance {
+  &::before {
+    background-image: url("../../img/snake.svg");
+  }
+}
+
+.advantages__superiority-box {
+  max-width: 95px;
+}
+
+.advantages__superiority-inner {
+  display: flex;
+}
+
+.advantages__superiority-number {
+  margin: 0;
+  font-weight: 600;
+  font-size: 35px;
+}
+
+.advantages__superiority-info {
+  margin: 0;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+}
+.advantages__superiority-text {
+  margin: 0;
+  margin-top: 5px;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.advantages__test-list {
+  @include reset-list;
+  display: flex;
+  align-items: center;
+}
+
+.advantages__test-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.advantages__test-item--drive {
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: "";
+    width: 22px;
+    height: 22px;
+    display: block;
+    margin-right: 10px;
+    background-image: url("../../img/steering-wheel.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+  }
+}
+
+.advantages__test-text {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 16px;
+  text-shadow: 1px 2px 5px #000;
+}
+
+.advantages__button-wrapper {
+  display: flex;
+  margin-top: 40px;
+}
+
+.advantages__button {
+  width: 28px;
+  height: 14px;
+  background-color: transparent;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("../../img/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+@include breakpoint-down (1018) {
+  .advantages__wrapper {
+    transform: translateX(50px);
+  }
+}
+
+@include breakpoint-down (975) {
+  .advantages__wrapper {
+    transform: translateX(1px);
+  }
+}
+
+@include breakpoint-down (768) {
+  .advantages__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .advantages__superiority-list {
+    margin-bottom: 50px;
+  }
+
+  .advantages__superiority-number {
+    font-size: 50px;
+  }
+}
+
+@include breakpoint-down (582) {
+  .advantages__superiority-list {
+    margin-top: 50px;
+  }
+}
+
+@include breakpoint-down (560) {
+  .advantages__superiority-number {
+    font-size: 27px;
+  }
+}
