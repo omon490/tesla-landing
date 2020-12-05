@@ -443,7 +443,7 @@ img {
   margin-left: auto;
 }
 
-.button-link {
+.button__link {
   text-decoration: none;
   padding: 10px 25px;
   font-weight: 500;
@@ -451,6 +451,16 @@ img {
   line-height: 16px;
   color: #E51937;
   border: 2px solid #E51937;
+}
+
+.button__link--light {
+  text-decoration: none;
+  padding: 10px 25px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  color: #fff;
+  border: 2px solid #fff;
 }
 
 @media only screen and (max-width: 910px) {
@@ -468,7 +478,7 @@ img {
     margin: 0;
     color: #fff;
   }
-  .button-link {
+  .button__link {
     color: #fff;
     background-color: #E51937;
   }
@@ -1236,6 +1246,200 @@ img {
   .advantages__superiority-number {
     font-size: 27px;
   }
+}
+
+.reviews {
+  padding-top: 5px;
+}
+
+.reviews__wrapper {
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.reviews__img {
+  display: block;
+  max-width: 1370px;
+}
+
+.reviews__right-wrapper {
+  position: absolute;
+  z-index: 1;
+  right: calc(50% - 760px);
+  bottom: 0;
+  max-width: 440px;
+  padding: 31px 52px 43px 32px;
+  background-color: #E51937;
+}
+
+.reviews__heading {
+  margin: 0;
+  margin-bottom: 11px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+  color: #fff;
+}
+
+.reviews__text {
+  margin: 0;
+  color: #fff;
+  margin-bottom: 54px;
+}
+
+.reviews__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.reviews__item {
+  margin-bottom: 35px;
+}
+
+.reviews__item--sceen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.reviews__item--sceen::before {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 53px;
+  margin-right: 20px;
+  background-image: url("../../img/screen.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.reviews__item--wifi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.reviews__item--wifi::before {
+  content: "";
+  display: block;
+  width: 44px;
+  height: 34px;
+  margin-right: 15px;
+  background-image: url("../../img/wifi.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.reviews__item--bag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 185px;
+}
+
+.reviews__item--bag::before {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 52px;
+  margin-right: 20px;
+  background-image: url("../../img/bag.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.reviews__inner {
+  max-width: 175px;
+}
+
+.reviews__inner-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.reviews__inner-number {
+  margin: 0;
+  margin-right: 5px;
+  font-weight: 600;
+  font-size: 35px;
+  color: #fff;
+}
+
+.reviews__inner-value {
+  margin: 0;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.reviews__inner-info {
+  margin: 0;
+  font-size: 12px;
+  line-height: 15px;
+  color: #fff;
+}
+
+.reviews__contact-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.reviews__contact-item--info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reviews__contact-item--info::before {
+  content: "";
+  display: block;
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+  background-image: url("../../img/icon!.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.reviews__contact-link {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
 }
 
 @-webkit-keyframes slide-in {

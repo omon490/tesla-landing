@@ -8,102 +8,162 @@
 </head>
 <body>
 
-<!-- SITE-HEADER -->
-<header class="site-header">
-  <div class="container site-header__container">
-    <a class="logo" href="index.html">
-      <img class="logo__img" src="img/logo.svg" alt="site logo" width="166" height="51">
-    </a>
+  <!-- SITE-HEADER -->
+  <header class="site-header">
+    <div class="container site-header__container">
+      <a class="logo" href="index.html">
+        <img class="logo__img" src="img/logo.svg" alt="site logo" width="166" height="51">
+      </a>
 
-    <nav class="sitenav">
-      <ul class="sitenav__list">
-        <li class="sitenav__item sitenav__item--active">
-          <a class="sitenav__link" href="index.html">Model S</a>
-        </li>
+      <nav class="sitenav">
+        <ul class="sitenav__list">
+          <li class="sitenav__item sitenav__item--active">
+            <a class="sitenav__link" href="index.html">Model S</a>
+          </li>
 
-        <li class="sitenav__item">
-          <a class="sitenav__link" href="#">Model X</a>
-        </li>
+          <li class="sitenav__item">
+            <a class="sitenav__link" href="#">Model X</a>
+          </li>
 
-        <li class="sitenav__item">
-          <a class="sitenav__link" href="#">Model 3</a>
-        </li>
+          <li class="sitenav__item">
+            <a class="sitenav__link" href="#">Model 3</a>
+          </li>
 
-        <li class="sitenav__item">
-          <a class="sitenav__link" href="#">Roadster</a>
-        </li>
+          <li class="sitenav__item">
+            <a class="sitenav__link" href="#">Roadster</a>
+          </li>
 
-        <li class="sitenav__item">
-          <a class="sitenav__link" href="#">Energy</a>
-        </li>
-      </ul>
+          <li class="sitenav__item">
+            <a class="sitenav__link" href="#">Energy</a>
+          </li>
+        </ul>
 
-      <a class="button" href="contact.html">Магазин</a>
+        <a class="button" href="contact.html">Магазин</a>
 
-      <a class="button" href="contact.html">Войти</a>
-    </nav>
+        <a class="button" href="contact.html">Войти</a>
+      </nav>
 
-    <button class="site-header__sitenav-toggler" type="button" aria-label="menu toggler"></button>
-  </div>
-</header>
+      <button class="site-header__sitenav-toggler" type="button" aria-label="menu toggler"></button>
+    </div>
+  </header>
 
-<!-- SITE-MAIN -->
-<main class="site-main">
-  <!-- INTRO -->
-  <section class="intro">
+  <!-- SITE-MAIN -->
+  <main class="site-main">
+    <!-- INTRO -->
+    <section class="intro">
+      <div class="container">
+        <h1 class="intro__heading">Model S</h1>
+        <p class="intro__text">Добро пожаловать в будущее!</p>
+        <img class="intro__img" src="img/model-s/model-s.png" srcset="img/model-s/model-s.png 1x, img/model-s/model-s@2x.png 2x" alt="tesla model-s img" width="968" height="450">
+      </div>
+    </section>
+  </main>
+
+  <!-- ADVANTAGES -->
+  <section class="advantages">
     <div class="container">
-      <h1 class="intro__heading">Model S</h1>
-      <p class="intro__text">Добро пожаловать в будущее!</p>
-      <img class="intro__img" src="img/model-s/model-s.png" srcset="img/model-s/model-s.png 1x, img/model-s/model-s@2x.png 2x" alt="tesla model-s img" width="968" height="450">
+      <div class="advantages__wrapper">
+        <ul class="advantages__superiority-list">
+          <li class="advantages__superiority-item advantages__superiority-item--speed">
+            <div class="advantages__superiority-box">
+              <div class="advantages__superiority-inner">
+                <p class="advantages__superiority-number">2,7</p>
+                <p class="advantages__superiority-info">сек</p>
+              </div>
+              <p class="advantages__superiority-text">0-100 км/час</p>
+            </div>
+          </li>
+          <li class="advantages__superiority-item advantages__superiority-item--distance">
+            <div class="advantages__superiority-box">
+              <div class="advantages__superiority-inner">
+                <p class="advantages__superiority-number">632</p>
+                <p class="advantages__superiority-info">км</p>
+              </div>
+              <p class="advantages__superiority-text">запас хода</p>
+            </div>
+          </li>
+        </ul>
+
+        <ul class="advantages__test-list">
+          <li class="advantages__test-item advantages__test-item--drive">
+            <p class="advantages__test-text">Тест драйв</p>
+          </li>
+
+          <li class="advantages__test-item">
+            <a class="button-link" href="#">Заказать</a>
+          </li>
+        </ul>
+      </div>
+      <div class="advantages__button-wrapper">
+        <button class="advantages__button"></button>
+      </div>
     </div>
   </section>
-</main>
 
-<!-- ADVANTAGES -->
-<section class="advantages">
-  <div class="container">
-    <div class="advantages__wrapper">
-      <ul class="advantages__superiority-list">
-        <li class="advantages__superiority-item advantages__superiority-item--speed">
-          <div class="advantages__superiority-box">
-            <div class="advantages__superiority-inner">
-              <p class="advantages__superiority-number">2,7</p>
-              <p class="advantages__superiority-info">сек</p>
-            </div>
-            <p class="advantages__superiority-text">0-100 км/час</p>
-          </div>
-        </li>
-        <li class="advantages__superiority-item advantages__superiority-item--distance">
-          <div class="advantages__superiority-box">
-            <div class="advantages__superiority-inner">
-              <p class="advantages__superiority-number">632</p>
-              <p class="advantages__superiority-info">км</p>
-            </div>
-            <p class="advantages__superiority-text">запас хода</p>
-          </div>
-        </li>
-      </ul>
+  <!-- REVIEWS -->
+  <section class="reviews">
+    <div class="reviews__wrapper">
+      <img class="reviews__img" src="img/review-bg/2013-tesla-model-s-cockpit.png" alt="model-s" width="1548" height="844">
+      <div class="reviews__right-wrapper">
+        <div class="container">
+          <h2 class="reviews__heading">Будущее вождения</h2>
+          <p class="reviews__text">Модель S обладает лучшей в своем классе вместимостью: в машине поместится до пяти взрослых и двух детей. Оснащена современным 17-дюймовым сенсорным экраном. Усовершенствованная шумовая инженерия создает динамику звука, сравнимую со студией звукозаписи, а стеклянная крыша обеспечивает просторный интерьер для каждого пассажира.</p>
+          <ul class="reviews__list">
+            <li class="reviews__item reviews__item--sceen">
+              <div class="reviews__inner">
+                <div class="reviews__inner-box">
+                  <p class="reviews__inner-number">17</p>
+                  <p class="reviews__inner-value">дюймов</p>
+                </div>
+                <p class="reviews__inner-info">Большой дисплей</p>
+              </div>
+            </li>
 
-      <ul class="advantages__test-list">
-        <li class="advantages__test-item advantages__test-item--drive">
-          <p class="advantages__test-text">Тест драйв</p>
-        </li>
+            <li class="reviews__item reviews__item--wifi">
+              <div class="reviews__inner">
+                <p class="reviews__inner-value">Беспроводное обновление ПО</p>
+                <p class="reviews__inner-info">Повышенная функциональность</p>
+              </div>
+            </li>
 
-        <li class="advantages__test-item">
-          <a class="button-link" href="#">Заказать</a>
-        </li>
-      </ul>
+            <li class="reviews__item reviews__item--bag">
+              <div class="reviews__inner">
+                <div class="reviews__inner-box">
+                  <p class="reviews__inner-number">894</p>
+                  <p class="reviews__inner-value">литра</p>
+                </div>
+                <p class="reviews__inner-info">Объем грузового пространства</p>
+              </div>
+            </li>
+          </ul>
+
+          <ul class="reviews__contact-list">
+            <li class="reviews__contact-item reviews__contact-item--info">
+              <a class="reviews__contact-link" href="#">УЗНАТЬ БОЛЬШЕ</a>
+            </li>
+
+            <li class="reviews__contact-item">
+              <a class="button__link button__link--light" href="#">Заказать</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <div class="advantages__button-wrapper">
-      <button class="advantages__button"></button>
-    </div>
-  </div>
-</section>
+  </section>
 
-<!-- REVIEWS -->
 
-   <!-- JS -->
-   <script>
+
+
+
+
+
+
+
+
+
+
+  <!-- JS -->
+  <script>
     var elSiteHeader = document.querySelector('.site-header');
     var elSitenavToggler = elSiteHeader.querySelector('.site-header__sitenav-toggler');
 
