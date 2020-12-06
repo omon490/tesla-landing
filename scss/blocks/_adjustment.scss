@@ -1,0 +1,122 @@
+
+
+.adjustment__wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.adjustment__left-wrapper {
+  position: absolute;
+  z-index: 1;
+  left: calc(50% - 760px);
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: $orangered;
+  padding: 51px 48px 65px 18px;
+  width: 100%;
+  max-width: 440px;
+}
+
+.adjustment__left-heading-box {
+  margin-bottom: 49px;
+}
+
+.adjustment__left-heading {
+  margin: 0;
+  margin-bottom: 12px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+  color: $white;
+}
+
+.adjustment__left-text {
+  margin: 0;
+  font-weight: 500;
+  color: $white;
+}
+
+.adjustment__right-heading {
+  margin: 0;
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+  color: $white;
+}
+
+.adjustment__right-list {
+  @include reset-list;
+  margin-bottom: 115px;
+}
+
+.adjustment__right-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  color: $white;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.adjustment__right-img:nth-child(1) {
+  margin-left: auto;
+}
+
+.adjustment__safe {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+  &::before {
+    content: "";
+    width: 62px;
+    height: 74px;
+    display: block;
+    margin-right: 25px;
+    background-image: url("../../img/safe.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+  }
+}
+
+.adjustment__safe-inner {
+  max-width: 200px;
+}
+
+.adjustment__safe-heading {
+  margin: 0;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 61px;
+  color: $white;
+}
+
+.adjustment__safe-text {
+  margin: 0;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 30px;
+  color: $white;
+}
+
+.adjustment__img {
+  position: absolute;
+  z-index: 5;
+  left: calc(50% - 440px);
+  top: calc(50% + 195px);
+  margin-left: auto;
+}
+
+.adjustment__text-img {
+  position: absolute;
+  z-index: 4;
+  left: calc(50% - 172px);
+  top: calc(50% + 150px);
+  margin-left: auto;
+}
