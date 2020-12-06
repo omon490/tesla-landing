@@ -25,6 +25,15 @@
 
 
 @include breakpoint-down (785) {
+  .site-header__container {
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: $white;
+  }
+
   .site-header__sitenav-toggler {
     position: relative;
     z-index: 100;
